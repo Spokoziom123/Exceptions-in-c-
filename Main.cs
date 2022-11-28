@@ -19,6 +19,9 @@ catch(StackOverflowException e){
 catch(ArithmeticException e){
     Console.WriteLine("Błąd Arytmatyczny: " + e.Message);
 }
+catch(NullReferenceException e){
+    Console.WriteLine("Nic nie podano: "+e.Message);
+}
 catch(Exception e){
     Console.WriteLine("Error: "+e.Message);
 }
